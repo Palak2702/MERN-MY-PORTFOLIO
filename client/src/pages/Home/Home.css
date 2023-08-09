@@ -1,0 +1,296 @@
+
+.homeCanvasContainer{
+    width: 100vw;
+    max-width: 100%;
+    height: 85vh;
+     /* position: absolute; */
+    color: white;
+    display: flex;
+    
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    
+    background-image: url(../../images/bg.jpg);
+    background-size:cover;
+          -webkit-animation: slidein 50s;
+          animation: slidein 40s;
+  
+          -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  
+          -webkit-animation-direction: alternate;
+          animation-direction: alternate; 
+  }   
+    
+   .homeCanvasContainer section{
+    width: 100%;   
+    margin: auto;
+
+   } 
+   .homeCanvasContainer section:last-of-type{
+    padding-left:10vmax ;
+
+   }
+   .homeCanvasContainer section:last-of-type .hd{      
+    
+    height: 100%;
+    
+   }
+   .homeCanvasContainer section:last-of-type .hd h1{
+    font: 900;
+    color: rgb(14, 77, 250);    
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+   }
+   .homeCanvasContainer section:last-of-type .hd p{
+    font-size: 25px;
+    color: rgb(243, 3, 95);
+
+   }
+   .typewriterpara{
+      height: 20px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      color: rgb(113, 17, 216);         
+   }
+   .homeCanvasContainer section:last-of-type .hd2{
+    display: flex;
+    margin: 3rem 0;
+    width: 70%;   
+    align-items: center;
+   }
+   .homeCanvasContainer section:last-of-type .hd2 :link{
+    
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2.5rem;
+    background-color: white;
+    border: 1px solid gray;    
+   }
+
+
+   .homeCanvasContainer section:first-of-type{
+     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;    
+    overflow-y: hidden;    
+   }
+   .homeCanvasContainer section img{
+    height:25vmax;
+    width: 25vmax;
+    /* object-fit: contain; */
+    border: 1px solid #efdfdf;
+    border-radius: 30vmax;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(159, 122, 215, 0.2), 0 6px 20px 0 rgba(237, 150, 150, 0.19);
+ 
+    
+   }
+   .homeCanvasContainer section img:hover{
+    height:28vmax;
+    width: 28vmax;
+    border-radius: 32vmax;
+    
+
+   }
+
+   .hometimeline{
+    background-color: white;
+    padding-top: 2vmax;
+    border-radius: 0 0 200px 200px;
+    border-bottom: 200px solid white;
+    position: relative;
+    z-index: 1;
+  }
+  .hometimeline h3{
+    text-align: center;
+    color: rgba(22, 20, 20, 0.904);
+    padding: 2vmax;
+    font-size: 40px;
+    
+  }
+   
+  .homeSkills{
+    transform: translateY(-200px);
+    background-color: hsl(219, 48%, 8%);
+    height: 1500px;
+    position: relative;
+    margin-bottom: -200px;
+    padding: 200px;
+    box-sizing: border-box;
+    perspective: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .homeSkills > h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 4vmax;
+    font-size: 4vmax;
+  }
+  .homeCubeSkills {
+    width: 200px;
+    height: 200px;
+    animation: cubeRotation 15s linear infinite alternate;
+    transform-style: preserve-3d;
+  }
+  
+  .homeCubeSkillsFaces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0.7;
+  }
+  
+  .homeCubeSkillsFaces > img {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .homeCubeSkillsFace1 {
+    transform: translate3d(0, 0, 100px);
+  }
+  .homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translate3d(0, 0, 150px);
+  }
+  .homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 150px);
+  }
+  .homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translate3d(0, 0, 150px);
+  }
+  .homeCubeSkillsFace5 {
+    transform: rotateX(90deg) translate3d(0, 0, 150px);
+  }
+  .homeCubeSkillsFace6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 150px);
+  }
+  
+  .cubeShadow {
+    width: 300px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 50%;
+    animation: cubeShadow 1s ease-in-out infinite alternate;
+    filter: blur(3px);
+  }
+  
+  .homeskillsBox {
+    background-color: hsl(250, 100%, 75%);
+    padding: 0 2vmax;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: flex-end;
+    right: 5px;
+      
+  }
+  
+  .homeskillsBox > svg {
+    font-size: 5vmax;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    margin: 10px;
+  }
+  .homeskillsBox > svg:hover {
+    transform: scale(1.5);
+  }
+  
+  @keyframes cubeRotation {
+    to {
+      transform: rotateY(360deg) rotateX(480deg) rotateZ(720deg);
+    }
+  }
+  
+  @keyframes cubeShadow {
+    to {
+      transform: scale(1.2) translateY(-10px);
+    }
+  }
+  
+ 
+    @-webkit-keyframes slidein {
+    from {background-position: top; background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    }
+    
+    @keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    
+  }
+  @media screen and (max-width: 600px) {
+   
+    .homeCubeSkills {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .homeCubeSkillsFace1 {
+      transform: translate3d(0, 0, 75px);
+    }
+    .homeCubeSkillsFace2 {
+      transform: rotateY(180deg) translate3d(0, 0, 75px);
+    }
+    .homeCubeSkillsFace3 {
+      transform: rotateY(-90deg) translate3d(0, 0, 75px);
+    }
+    .homeCubeSkillsFace4 {
+      transform: rotateY(90deg) translate3d(0, 0, 75px);
+    }
+    .homeCubeSkillsFace5 {
+      transform: rotateX(90deg) translate3d(0, 0, 75px);
+    }
+    .homeCubeSkillsFace6 {
+      transform: rotateX(-90deg) translate3d(0, 0, 75px);
+    }
+    .homeCanvasContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .homeCanvasContainer section:last-of-type{
+      padding: 0;
+      margin: auto;     
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+    }
+    .homeCanvasContainer section:last-of-type .hd2{
+      /* margin: 5px; */
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .homeCanvasContainer section:last-of-type .hd2 :link{
+    
+      font-size: 10px;
+      text-decoration: none;
+      color: rgb(12, 8, 230);
+      padding: 10px;
+      background-color: white;
+      border: 1px solid gray;    
+     }
+  }
